@@ -1,329 +1,38 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
-
-local CoreGui = Instance.new("ScreenGui")
-local Frame = Instance.new("Frame")
-local SideFrame = Instance.new("Frame")
-local KRNL = Instance.new("TextLabel")
-local Script = Instance.new("TextButton")
-local Credits = Instance.new("TextButton")
-local Settings = Instance.new("TextButton")
-local ScriptFrame = Instance.new("Frame")
-local RayX = Instance.new("TextButton")
-local SwagMode = Instance.new("TextButton")
-local Encrypt = Instance.new("TextButton")
-local RayCodeX = Instance.new("TextButton")
-local ComingSoon = Instance.new("TextLabel")
-local Artic = Instance.new("TextButton")
-local SoftVortex = Instance.new("TextButton")
-local CreditsFrame = Instance.new("Frame")
-local TextLabel = Instance.new("TextLabel")
-local TextLabel_2 = Instance.new("TextLabel")
-local SettingsFrame = Instance.new("Frame")
-local ChangeServer = Instance.new("TextButton")
-local TextLabel_3 = Instance.new("TextLabel")
-
---Properties:
-
-CoreGui.Name = "CoreGui"
-CoreGui.Parent = game.CoreGui
-CoreGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-
-Frame.Parent = CoreGui
-Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Frame.BorderSizePixel = 0
-Frame.Position = UDim2.new(0.147652924, 0, 0.177842304, 0)
-Frame.Size = UDim2.new(0, 475, 0, 311)
-
-SideFrame.Name = "SideFrame"
-SideFrame.Parent = Frame
-SideFrame.BackgroundColor3 = Color3.fromRGB(16, 16, 16)
-SideFrame.BorderSizePixel = 0
-SideFrame.Size = UDim2.new(0, 104, 0, 311)
-
-KRNL.Name = "KRNL"
-KRNL.Parent = SideFrame
-KRNL.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-KRNL.BackgroundTransparency = 1.000
-KRNL.BorderSizePixel = 0
-KRNL.Size = UDim2.new(0, 104, 0, 65)
-KRNL.Font = Enum.Font.Arial
-KRNL.Text = "Goxzi X"
-KRNL.TextColor3 = Color3.fromRGB(255, 255, 255)
-KRNL.TextSize = 19.000
-
-Script.Name = "Script"
-Script.Parent = SideFrame
-Script.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Script.BackgroundTransparency = 1.000
-Script.Position = UDim2.new(0, 0, 0.20900321, 0)
-Script.Size = UDim2.new(0, 104, 0, 77)
-Script.Font = Enum.Font.Arial
-Script.Text = "Scripts"
-Script.TextColor3 = Color3.fromRGB(255, 255, 255)
-Script.TextSize = 19.000
-
-Credits.Name = "Credits"
-Credits.Parent = SideFrame
-Credits.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Credits.BackgroundTransparency = 1.000
-Credits.Position = UDim2.new(0, 0, 0.456591636, 0)
-Credits.Size = UDim2.new(0, 104, 0, 77)
-Credits.Font = Enum.Font.Arial
-Credits.Text = "Credits"
-Credits.TextColor3 = Color3.fromRGB(255, 255, 255)
-Credits.TextSize = 19.000
-
-Settings.Name = "Settings"
-Settings.Parent = SideFrame
-Settings.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Settings.BackgroundTransparency = 1.000
-Settings.Position = UDim2.new(0, 0, 0.704180062, 0)
-Settings.Size = UDim2.new(0, 104, 0, 75)
-Settings.Font = Enum.Font.Arial
-Settings.Text = "Settings"
-Settings.TextColor3 = Color3.fromRGB(255, 255, 255)
-Settings.TextSize = 19.000
-
-ScriptFrame.Name = "ScriptFrame"
-ScriptFrame.Parent = Frame
-ScriptFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScriptFrame.BackgroundTransparency = 1.000
-ScriptFrame.Position = UDim2.new(0.218947366, 0, 0, 0)
-ScriptFrame.Size = UDim2.new(0, 371, 0, 311)
-ScriptFrame.Visible = false
-
-RayX.Name = "Ray X"
-RayX.Parent = ScriptFrame
-RayX.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-RayX.BackgroundTransparency = 0.700
-RayX.Size = UDim2.new(0, 183, 0, 71)
-RayX.Font = Enum.Font.Arial
-RayX.Text = "Ray X"
-RayX.TextColor3 = Color3.fromRGB(255, 255, 255)
-RayX.TextSize = 14.000
-
-SwagMode.Name = "Swag Mode"
-SwagMode.Parent = ScriptFrame
-SwagMode.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-SwagMode.BackgroundTransparency = 0.700
-SwagMode.Position = UDim2.new(0.493261456, 0, 0, 0)
-SwagMode.Size = UDim2.new(0, 188, 0, 71)
-SwagMode.Font = Enum.Font.Arial
-SwagMode.Text = "Swag Mode"
-SwagMode.TextColor3 = Color3.fromRGB(255, 255, 255)
-SwagMode.TextSize = 14.000
-
-Encrypt.Name = "Encrypt"
-Encrypt.Parent = ScriptFrame
-Encrypt.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Encrypt.BackgroundTransparency = 0.700
-Encrypt.Position = UDim2.new(0.493261456, 0, 0.228295818, 0)
-Encrypt.Size = UDim2.new(0, 188, 0, 71)
-Encrypt.Font = Enum.Font.Arial
-Encrypt.Text = "Encrypt"
-Encrypt.TextColor3 = Color3.fromRGB(255, 255, 255)
-Encrypt.TextSize = 14.000
-
-RayCodeX.Name = "RayCodeX"
-RayCodeX.Parent = ScriptFrame
-RayCodeX.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-RayCodeX.BackgroundTransparency = 0.700
-RayCodeX.Position = UDim2.new(0, 0, 0.228295818, 0)
-RayCodeX.Size = UDim2.new(0, 183, 0, 71)
-RayCodeX.Font = Enum.Font.Arial
-RayCodeX.Text = "RayCodeX"
-RayCodeX.TextColor3 = Color3.fromRGB(255, 255, 255)
-RayCodeX.TextSize = 14.000
-
-ComingSoon.Name = "Coming Soon"
-ComingSoon.Parent = ScriptFrame
-ComingSoon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ComingSoon.BackgroundTransparency = 1.000
-ComingSoon.Position = UDim2.new(0, 0, 0.704180062, 0)
-ComingSoon.Size = UDim2.new(0, 371, 0, 92)
-ComingSoon.Font = Enum.Font.Arial
-ComingSoon.Text = "Coming Soon"
-ComingSoon.TextColor3 = Color3.fromRGB(255, 255, 255)
-ComingSoon.TextSize = 14.000
-
-Artic.Name = "Artic"
-Artic.Parent = ScriptFrame
-Artic.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Artic.BackgroundTransparency = 0.700
-Artic.Position = UDim2.new(0, 0, 0.456591636, 0)
-Artic.Size = UDim2.new(0, 183, 0, 71)
-Artic.Font = Enum.Font.Arial
-Artic.Text = "Artic"
-Artic.TextColor3 = Color3.fromRGB(255, 255, 255)
-Artic.TextSize = 14.000
-
-SoftVortex.Name = "SoftVortex"
-SoftVortex.Parent = ScriptFrame
-SoftVortex.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-SoftVortex.BackgroundTransparency = 0.700
-SoftVortex.Position = UDim2.new(0.493261456, 0, 0.456591636, 0)
-SoftVortex.Size = UDim2.new(0, 188, 0, 71)
-SoftVortex.Font = Enum.Font.Arial
-SoftVortex.Text = "SoftVortex"
-SoftVortex.TextColor3 = Color3.fromRGB(255, 255, 255)
-SoftVortex.TextSize = 14.000
-
-CreditsFrame.Name = "CreditsFrame"
-CreditsFrame.Parent = Frame
-CreditsFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-CreditsFrame.BackgroundTransparency = 1.000
-CreditsFrame.Position = UDim2.new(0.218947366, 0, 0, 0)
-CreditsFrame.Size = UDim2.new(0, 371, 0, 311)
-CreditsFrame.Visible = false
-
-TextLabel.Parent = CreditsFrame
-TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.BackgroundTransparency = 1.000
-TextLabel.Position = UDim2.new(0, 0, 0.350482255, 0)
-TextLabel.Size = UDim2.new(0, 371, 0, 33)
-TextLabel.Font = Enum.Font.Arial
-TextLabel.Text = "Mark.#0020"
-TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.TextSize = 14.000
-
-TextLabel_2.Parent = CreditsFrame
-TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.BackgroundTransparency = 1.000
-TextLabel_2.BorderSizePixel = 0
-TextLabel_2.Position = UDim2.new(0, 0, 0.485530496, 0)
-TextLabel_2.Size = UDim2.new(0, 371, 0, 43)
-TextLabel_2.Font = Enum.Font.Arial
-TextLabel_2.Text = "goxzi#2967"
-TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.TextSize = 14.000
-
-SettingsFrame.Name = "SettingsFrame"
-SettingsFrame.Parent = Frame
-SettingsFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-SettingsFrame.BackgroundTransparency = 1.000
-SettingsFrame.Position = UDim2.new(0.218947366, 0, 0, 0)
-SettingsFrame.Size = UDim2.new(0, 371, 0, 311)
-SettingsFrame.Visible = false
-
-ChangeServer.Name = "Change Server"
-ChangeServer.Parent = SettingsFrame
-ChangeServer.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ChangeServer.BackgroundTransparency = 0.700
-ChangeServer.Size = UDim2.new(0, 371, 0, 71)
-ChangeServer.Font = Enum.Font.Arial
-ChangeServer.Text = "Change Server"
-ChangeServer.TextColor3 = Color3.fromRGB(255, 255, 255)
-ChangeServer.TextSize = 14.000
-
-TextLabel_3.Parent = SettingsFrame
-TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_3.BackgroundTransparency = 1.000
-TextLabel_3.Position = UDim2.new(0, 0, 0.228295818, 0)
-TextLabel_3.Size = UDim2.new(0, 371, 0, 240)
-TextLabel_3.Font = Enum.Font.Arial
-TextLabel_3.Text = "COMING SOON"
-TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_3.TextSize = 14.000
-
--- Scripts:
-
-local function KKGVMET_fake_script() -- Script.LocalScript 
-	local script = Instance.new('LocalScript', Script)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.Parent.ScriptFrame.Visible = true
-		script.Parent.Parent.Parent.CreditsFrame.Visible = false
-		script.Parent.Parent.Parent.SettingsFrame.Visible = false
-	end)
-end
-coroutine.wrap(KKGVMET_fake_script)()
-local function ABFBJP_fake_script() -- Credits.LocalScript 
-	local script = Instance.new('LocalScript', Credits)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.Parent.ScriptFrame.Visible = false
-		script.Parent.Parent.Parent.CreditsFrame.Visible = true
-		script.Parent.Parent.Parent.SettingsFrame.Visible = false
-	end)
-end
-coroutine.wrap(ABFBJP_fake_script)()
-local function XTDFQHM_fake_script() -- Settings.LocalScript 
-	local script = Instance.new('LocalScript', Settings)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.Parent.ScriptFrame.Visible = false
-		script.Parent.Parent.Parent.CreditsFrame.Visible = false
-		script.Parent.Parent.Parent.SettingsFrame.Visible = true
-	end)
-end
-coroutine.wrap(XTDFQHM_fake_script)()
-local function JUUCJM_fake_script() -- RayX.LocalScript 
-	local script = Instance.new('LocalScript', RayX)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/SpaceYes/Lua/Main/DaHood.Lua'))()
-	end)
-end
-coroutine.wrap(JUUCJM_fake_script)()
-local function PTXVM_fake_script() -- SwagMode.LocalScript 
-	local script = Instance.new('LocalScript', SwagMode)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SwagModeV002'))()
-	end)
-end
-coroutine.wrap(PTXVM_fake_script)()
-local function ACNWF_fake_script() -- Encrypt.LocalScript 
-	local script = Instance.new('LocalScript', Encrypt)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/LPrandom/lua-projects/master/encryptgui.lua"))()
-	end)
-end
-coroutine.wrap(ACNWF_fake_script)()
-local function HEIUN_fake_script() -- RayCodeX.LocalScript 
-	local script = Instance.new('LocalScript', RayCodeX)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:GetObjects("rbxassetid://5812737894")[1].Source)()
-	end)
-end
-coroutine.wrap(HEIUN_fake_script)()
-local function BEEIYUQ_fake_script() -- Artic.LocalScript 
-	local script = Instance.new('LocalScript', Artic)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/PolarWasHere/Arctic/main/Arctic"))()
-	end)
-end
-coroutine.wrap(BEEIYUQ_fake_script)()
-local function SWBO_fake_script() -- SoftVortex.LocalScript 
-	local script = Instance.new('LocalScript', SoftVortex)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet(("https://raw.githubusercontent.com/SoftVortex/.../main/....."),true))()
-	end)
-end
-coroutine.wrap(SWBO_fake_script)()
-local function PZSQJEU_fake_script() -- ChangeServer.LocalScript 
-	local script = Instance.new('LocalScript', ChangeServer)
-
-	script.Parent.MouseButton1Click:connect(function()
-	
-		game:GetService("TeleportService"):Teleport("2788229376")
-		
-	end)
-end
-coroutine.wrap(PZSQJEU_fake_script)()
-local function PYYM_fake_script() -- CoreGui.LocalScript 
-	local script = Instance.new('LocalScript', CoreGui)
-
-	frame = script.Parent.Frame
-	frame.Draggable = true
-	frame.Selectable = true
-	frame.Active = true
-end
-coroutine.wrap(PYYM_fake_script)()
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Goxzi X", "GrapeTheme")
+local Tab = Window:NewTab("Scripts")
+local ScriptSection = Tab:NewSection("Scripts")
+ScriptSection:NewButton("Swag Mode", "ButtonInfo", function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SwagModeV002'))()
+end)
+ScriptSection:NewButton("Encrypt", "ButtonInfo", function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/LPrandom/lua-projects/master/encryptgui.lua"))()
+end)
+ScriptSection:NewButton("Ray X", "ButtonInfo", function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/SpaceYes/Lua/Main/DaHood.Lua'))()
+end)
+ScriptSection:NewButton("Artic", "ButtonInfo", function()
+   loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/PolarWasHere/Arctic/main/Arctic"))()
+end)
+ScriptSection:NewButton("SoftVortex", "ButtonInfo", function()
+   loadstring(game:HttpGet(("https://raw.githubusercontent.com/SoftVortex/.../main/....."),true))()
+end)
+ScriptSection:NewButton("RayCodeX", "ButtonInfo", function()
+   loadstring(game:GetObjects("rbxassetid://5812737894")[1].Source)()
+end)
+local Tab = Window:NewTab("Credits")
+local CreditsSection = Tab:NewSection("Credits")
+CreditsSection:NewButton("Mark.#0020", "ButtonInfo", function()
+   Print("Mark")
+end)
+CreditsSection:NewButton("goxzi#2967", "ButtonInfo", function()
+   Print("Goxzi")
+end)
+local Tab = Window:NewTab("Settings")
+local SettingsSection = Tab:NewSection("Settings")
+SettingsSection:NewButton("Change Server", "ButtonInfo", function()
+   game:GetService("TeleportService"):Teleport("2788229376")
+end)
+SettingsSection:NewButton("Coming Soon", "ButtonInfo", function()
+   Print("Coming Soon")
+end)
