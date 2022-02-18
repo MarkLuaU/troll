@@ -19,14 +19,11 @@ local ComingSoon = Instance.new("TextLabel")
 local Artic = Instance.new("TextButton")
 local SoftVortex = Instance.new("TextButton")
 local CreditsFrame = Instance.new("Frame")
-local dikoalam = Instance.new("TextLabel")
-local support = Instance.new("TextLabel")
-local lily = Instance.new("TextLabel")
-local Mark = Instance.new("TextLabel")
-local gloxy = Instance.new("TextLabel")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
 local SettingsFrame = Instance.new("Frame")
 local ChangeServer = Instance.new("TextButton")
-local TextLabel = Instance.new("TextLabel")
+local TextLabel_3 = Instance.new("TextLabel")
 
 --Properties:
 
@@ -53,7 +50,7 @@ KRNL.BackgroundTransparency = 1.000
 KRNL.BorderSizePixel = 0
 KRNL.Size = UDim2.new(0, 104, 0, 65)
 KRNL.Font = Enum.Font.Arial
-KRNL.Text = "KRNL #1"
+KRNL.Text = "Goxzi X"
 KRNL.TextColor3 = Color3.fromRGB(255, 255, 255)
 KRNL.TextSize = 19.000
 
@@ -96,6 +93,7 @@ ScriptFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ScriptFrame.BackgroundTransparency = 1.000
 ScriptFrame.Position = UDim2.new(0.218947366, 0, 0, 0)
 ScriptFrame.Size = UDim2.new(0, 371, 0, 311)
+ScriptFrame.Visible = false
 
 RayX.Name = "Ray X"
 RayX.Parent = ScriptFrame
@@ -181,64 +179,26 @@ CreditsFrame.Position = UDim2.new(0.218947366, 0, 0, 0)
 CreditsFrame.Size = UDim2.new(0, 371, 0, 311)
 CreditsFrame.Visible = false
 
-dikoalam.Name = "diko alam"
-dikoalam.Parent = CreditsFrame
-dikoalam.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-dikoalam.BackgroundTransparency = 0.700
-dikoalam.BorderSizePixel = 0
-dikoalam.Size = UDim2.new(0, 371, 0, 65)
-dikoalam.Font = Enum.Font.Arial
-dikoalam.Text = "huh??#8731"
-dikoalam.TextColor3 = Color3.fromRGB(255, 255, 255)
-dikoalam.TextSize = 14.000
+TextLabel.Parent = CreditsFrame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0, 0, 0.350482255, 0)
+TextLabel.Size = UDim2.new(0, 371, 0, 33)
+TextLabel.Font = Enum.Font.Arial
+TextLabel.Text = "Mark.#0020"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 14.000
 
-support.Name = "support"
-support.Parent = CreditsFrame
-support.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-support.BackgroundTransparency = 0.700
-support.BorderSizePixel = 0
-support.Position = UDim2.new(0, 0, 0.20900321, 0)
-support.Size = UDim2.new(0, 371, 0, 52)
-support.Font = Enum.Font.Arial
-support.Text = "PingOrDmForSupport#0236"
-support.TextColor3 = Color3.fromRGB(255, 255, 255)
-support.TextSize = 14.000
-
-lily.Name = "lily"
-lily.Parent = CreditsFrame
-lily.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-lily.BackgroundTransparency = 0.700
-lily.BorderSizePixel = 0
-lily.Position = UDim2.new(0, 0, 0.376205802, 0)
-lily.Size = UDim2.new(0, 371, 0, 59)
-lily.Font = Enum.Font.Arial
-lily.Text = "lily<3#1111"
-lily.TextColor3 = Color3.fromRGB(255, 255, 255)
-lily.TextSize = 14.000
-
-Mark.Name = "Mark"
-Mark.Parent = CreditsFrame
-Mark.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Mark.BackgroundTransparency = 0.700
-Mark.BorderSizePixel = 0
-Mark.Position = UDim2.new(0, 0, 0.565916419, 0)
-Mark.Size = UDim2.new(0, 371, 0, 43)
-Mark.Font = Enum.Font.Arial
-Mark.Text = "Mark.#0020"
-Mark.TextColor3 = Color3.fromRGB(255, 255, 255)
-Mark.TextSize = 14.000
-
-gloxy.Name = "gloxy"
-gloxy.Parent = CreditsFrame
-gloxy.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-gloxy.BackgroundTransparency = 0.700
-gloxy.BorderSizePixel = 0
-gloxy.Position = UDim2.new(0, 0, 0.704180062, 0)
-gloxy.Size = UDim2.new(0, 371, 0, 41)
-gloxy.Font = Enum.Font.Arial
-gloxy.Text = "GlowyParadox#4345"
-gloxy.TextColor3 = Color3.fromRGB(255, 255, 255)
-gloxy.TextSize = 14.000
+TextLabel_2.Parent = CreditsFrame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0, 0, 0.485530496, 0)
+TextLabel_2.Size = UDim2.new(0, 371, 0, 43)
+TextLabel_2.Font = Enum.Font.Arial
+TextLabel_2.Text = "goxzi#2967"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 14.000
 
 SettingsFrame.Name = "SettingsFrame"
 SettingsFrame.Parent = Frame
@@ -258,19 +218,19 @@ ChangeServer.Text = "Change Server"
 ChangeServer.TextColor3 = Color3.fromRGB(255, 255, 255)
 ChangeServer.TextSize = 14.000
 
-TextLabel.Parent = SettingsFrame
-TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.BackgroundTransparency = 1.000
-TextLabel.Position = UDim2.new(0, 0, 0.228295818, 0)
-TextLabel.Size = UDim2.new(0, 371, 0, 240)
-TextLabel.Font = Enum.Font.Arial
-TextLabel.Text = "COMING SOON"
-TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.TextSize = 14.000
+TextLabel_3.Parent = SettingsFrame
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(0, 0, 0.228295818, 0)
+TextLabel_3.Size = UDim2.new(0, 371, 0, 240)
+TextLabel_3.Font = Enum.Font.Arial
+TextLabel_3.Text = "COMING SOON"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextSize = 14.000
 
 -- Scripts:
 
-local function XPFBHL_fake_script() -- Script.LocalScript 
+local function KKGVMET_fake_script() -- Script.LocalScript 
 	local script = Instance.new('LocalScript', Script)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -279,8 +239,8 @@ local function XPFBHL_fake_script() -- Script.LocalScript
 		script.Parent.Parent.Parent.SettingsFrame.Visible = false
 	end)
 end
-coroutine.wrap(XPFBHL_fake_script)()
-local function HXOVKZ_fake_script() -- Credits.LocalScript 
+coroutine.wrap(KKGVMET_fake_script)()
+local function ABFBJP_fake_script() -- Credits.LocalScript 
 	local script = Instance.new('LocalScript', Credits)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -289,8 +249,8 @@ local function HXOVKZ_fake_script() -- Credits.LocalScript
 		script.Parent.Parent.Parent.SettingsFrame.Visible = false
 	end)
 end
-coroutine.wrap(HXOVKZ_fake_script)()
-local function BVWZN_fake_script() -- Settings.LocalScript 
+coroutine.wrap(ABFBJP_fake_script)()
+local function XTDFQHM_fake_script() -- Settings.LocalScript 
 	local script = Instance.new('LocalScript', Settings)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -299,56 +259,56 @@ local function BVWZN_fake_script() -- Settings.LocalScript
 		script.Parent.Parent.Parent.SettingsFrame.Visible = true
 	end)
 end
-coroutine.wrap(BVWZN_fake_script)()
-local function BMPOFID_fake_script() -- RayX.LocalScript 
+coroutine.wrap(XTDFQHM_fake_script)()
+local function JUUCJM_fake_script() -- RayX.LocalScript 
 	local script = Instance.new('LocalScript', RayX)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/SpaceYes/Lua/Main/DaHood.Lua'))()
 	end)
 end
-coroutine.wrap(BMPOFID_fake_script)()
-local function BHQF_fake_script() -- SwagMode.LocalScript 
+coroutine.wrap(JUUCJM_fake_script)()
+local function PTXVM_fake_script() -- SwagMode.LocalScript 
 	local script = Instance.new('LocalScript', SwagMode)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SwagModeV002'))()
 	end)
 end
-coroutine.wrap(BHQF_fake_script)()
-local function WVEMHTD_fake_script() -- Encrypt.LocalScript 
+coroutine.wrap(PTXVM_fake_script)()
+local function ACNWF_fake_script() -- Encrypt.LocalScript 
 	local script = Instance.new('LocalScript', Encrypt)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/LPrandom/lua-projects/master/encryptgui.lua"))()
 	end)
 end
-coroutine.wrap(WVEMHTD_fake_script)()
-local function DYNX_fake_script() -- RayCodeX.LocalScript 
+coroutine.wrap(ACNWF_fake_script)()
+local function HEIUN_fake_script() -- RayCodeX.LocalScript 
 	local script = Instance.new('LocalScript', RayCodeX)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:GetObjects("rbxassetid://5812737894")[1].Source)()
 	end)
 end
-coroutine.wrap(DYNX_fake_script)()
-local function ZOFMG_fake_script() -- Artic.LocalScript 
+coroutine.wrap(HEIUN_fake_script)()
+local function BEEIYUQ_fake_script() -- Artic.LocalScript 
 	local script = Instance.new('LocalScript', Artic)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/PolarWasHere/Arctic/main/Arctic"))()
 	end)
 end
-coroutine.wrap(ZOFMG_fake_script)()
-local function XQOOBR_fake_script() -- SoftVortex.LocalScript 
+coroutine.wrap(BEEIYUQ_fake_script)()
+local function SWBO_fake_script() -- SoftVortex.LocalScript 
 	local script = Instance.new('LocalScript', SoftVortex)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet(("https://raw.githubusercontent.com/SoftVortex/.../main/....."),true))()
 	end)
 end
-coroutine.wrap(XQOOBR_fake_script)()
-local function OUKDNO_fake_script() -- ChangeServer.LocalScript 
+coroutine.wrap(SWBO_fake_script)()
+local function PZSQJEU_fake_script() -- ChangeServer.LocalScript 
 	local script = Instance.new('LocalScript', ChangeServer)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -357,8 +317,8 @@ local function OUKDNO_fake_script() -- ChangeServer.LocalScript
 		
 	end)
 end
-coroutine.wrap(OUKDNO_fake_script)()
-local function SEMM_fake_script() -- CoreGui.LocalScript 
+coroutine.wrap(PZSQJEU_fake_script)()
+local function PYYM_fake_script() -- CoreGui.LocalScript 
 	local script = Instance.new('LocalScript', CoreGui)
 
 	frame = script.Parent.Frame
@@ -366,4 +326,4 @@ local function SEMM_fake_script() -- CoreGui.LocalScript
 	frame.Selectable = true
 	frame.Active = true
 end
-coroutine.wrap(SEMM_fake_script)()
+coroutine.wrap(PYYM_fake_script)()
