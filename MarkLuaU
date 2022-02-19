@@ -10,7 +10,7 @@ ScriptSection:NewButton("Encrypt", "Encrypt", function()
 end)
 ScriptSection:NewButton("Ray X", "Ray X", function()
    loadstring(game:HttpGet('https://raw.githubusercontent.com/SpaceYes/Lua/Main/DaHood.Lua'))()
-end)
+end
 ScriptSection:NewButton("Artic", "Artic", function()
    loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/PolarWasHere/Arctic/main/Arctic"))()
 end)
