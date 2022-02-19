@@ -17,8 +17,15 @@ end)
 ScriptSection:NewButton("RayCodeX", "RayCodeX", function()
    loadstring(game:GetObjects("rbxassetid://5812737894")[1].Source)()
 end)
-ScriptSection:NewButton("SpaceWare (Synapse & Krnl Only)", "Space Ware", function()
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/Maxiiiiiiiiiiiiiiiiiiiiiii/spacewarelol/main/spaceware"))()
+ScriptSection:NewButton("Intel (Krnl Only)", "Intel", function()
+   getgenv().Performance = false
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/i-nasa/intel_main/main/script.lua"))()
+end)
+ScriptSection:NewButton("Intel (Synapse X Only)", "Intel", function()
+   local Script = "https://raw.githubusercontent.com/i-nasa/intel_beta/beta/script.lua"
+
+loadstring(game:HttpGet(Script))()
 end)
 local Tab = Window:NewTab("Credits")
 local CreditsSection = Tab:NewSection("Mark.#0020")
